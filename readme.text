@@ -1,0 +1,42 @@
+Kanban Board Class
+The Kanban Board Class project is an interactive and visually appealing task management tool built using HTML, CSS, and JavaScript. It enables users to create, organize, and prioritize tasks with a simple and user-friendly interface. The application is fully functional in the browser and leverages LocalStorage for data persistence, ensuring tasks are retained even after refreshing the page.
+
+🔑 Key Features
+1. Task Management
+Add Tasks: Users can add new tasks by clicking the + button, which opens a modal for entering task details. Tasks are automatically assigned a unique ID.
+Remove Tasks: Tasks can be deleted by activating the "Remove" button and clicking on the specific task.
+2. Priority-Based Color Coding
+Each task can have one of four priority levels, represented by colors:
+Light Pink
+Light Green
+Light Blue
+Black
+Users can assign or change task priorities dynamically by clicking the task's color band.
+3. Lock and Unlock Tasks
+Tasks can be locked to prevent accidental editing or unlocked to allow changes.
+Lock and unlock functionality is toggled via an interactive lock icon.
+4. Task Filtering
+Filter tasks by priority color with a single click.
+Double-click to reset the filter and display all tasks.
+5. Persistent Storage
+All tasks, including their details, color priority, and lock state, are stored in LocalStorage.
+Data persists across browser sessions, ensuring users don't lose their tasks.
+📋 Project Structure
+HTML (index.html)
+Defines the structure of the application, including:
+
+Navbar (Toolbox): Provides filter options and action buttons.
+Modal Pop-Up: A form for creating new tasks with priority color selection.
+Main Content Area: Displays the list of tasks in a flexible layout.
+CSS (style.css)
+Defines the styling and responsive design:
+
+Ensures a clean and modern look with animations and transitions.
+Implements hover effects for buttons and color indicators.
+Provides a visually distinct modal for task creation.
+JavaScript (script.js)
+Implements interactivity and logic:
+
+Event Listeners: Handles user actions like adding, removing, filtering, and editing tasks.
+LocalStorage Management: Saves and retrieves tasks to/from LocalStorage for data persistence.
+Dynamic DOM Manipulation: Creates task elements dynamically and updates them based on user input.
